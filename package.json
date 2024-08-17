@@ -1,15 +1,18 @@
 {
-  "name": "nuxt-app",
+  "name": "saas-nuxt-boilerplate",
   "private": true,
   "type": "module",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxt/eslint": "^0.5.0",
     "nuxt": "^3.12.4",
     "vue": "latest"
   }
