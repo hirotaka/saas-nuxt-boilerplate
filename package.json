@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
+    "commit": "cz",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "format": "prettier . --check --ignore-path .gitignore",
@@ -22,11 +23,19 @@
   "devDependencies": {
     "@commitlint/cli": "^19.4.0",
     "@commitlint/config-conventional": "^19.2.2",
+    "@commitlint/cz-commitlint": "^19.4.0",
+    "commitizen": "^4.3.0",
     "husky": "^9.1.5",
     "lint-staged": "^15.2.9",
     "prettier": "^3.3.3"
   },
+  "commitizen": {
+    "path": "@commitlint/cz-commitlint"
+  },
   "lint-staged": {
-    "*.{ts,tsx}": "prettier --write"
+    "*.{js,vue}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   }
 }
