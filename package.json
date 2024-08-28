@@ -29,13 +29,15 @@
     "lint-staged": "^15.2.9",
     "prettier": "^3.3.3"
   },
-  "commitizen": {
-    "path": "@commitlint/cz-commitlint"
-  },
   "lint-staged": {
     "*.{js,vue}": [
       "eslint --fix",
       "prettier --write"
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
   }
 }
