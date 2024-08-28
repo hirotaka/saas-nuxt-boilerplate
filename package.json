@@ -11,7 +11,8 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "prepare": "husky"
   },
   "dependencies": {
     "@nuxt/eslint": "^0.5.0",
@@ -19,6 +20,11 @@
     "vue": "latest"
   },
   "devDependencies": {
+    "husky": "^9.1.5",
+    "lint-staged": "^15.2.9",
     "prettier": "^3.3.3"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": "prettier --write"
   }
 }
