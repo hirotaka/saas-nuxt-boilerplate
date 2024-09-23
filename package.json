@@ -13,21 +13,30 @@
     "lint:fix": "eslint . --fix",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "prepare": "husky"
-  },
-  "dependencies": {
-    "@nuxt/eslint": "^0.5.0",
-    "nuxt": "^3.12.4",
-    "vue": "latest"
+    "prepare": "husky",
+    "storybook": "storybook dev --port 6006",
+    "build-storybook": "storybook build"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.4.0",
     "@commitlint/config-conventional": "^19.2.2",
     "@commitlint/cz-commitlint": "^19.4.0",
+    "@nuxt/eslint": "^0.5.0",
+    "@nuxtjs/storybook": "latest",
+    "@storybook-vue/nuxt": "latest",
+    "@storybook/addon-essentials": "^8.3.0",
+    "@storybook/addon-interactions": "^8.3.0",
+    "@storybook/addon-links": "^8.3.0",
+    "@storybook/blocks": "^8.3.0",
+    "@storybook/test": "^8.3.0",
+    "@storybook/vue3": "^8.3.0",
+    "@types/node": "^18.17.5",
     "commitizen": "^4.3.0",
     "husky": "^9.1.5",
     "lint-staged": "^15.2.9",
-    "prettier": "^3.3.3"
+    "nuxt": "^3.13.2",
+    "prettier": "^3.3.3",
+    "storybook": "^8.3.0"
   },
   "lint-staged": {
     "*.{js,vue}": [
